@@ -1,0 +1,26 @@
+/*Main content CSS codes starts here */
+	
+.content {
+
+    display: flex;
+   flex-wrap: wrap;
+    background-color: #56727C;
+    padding-left: 3%;
+    padding-right: 3%;
+  justify-content: space-between;
+}
+
+.content > div {
+    background-color: #f1f1f1;
+    width: 40%;
+    margin: 10px;
+    text-align: center;
+    line-height: 700%;
+    font-size: 30px;
+    align-items: center;
+  width: 400px;
+  height: 300px;
+
+}
+
+/* Main content CSS codes end here*/
