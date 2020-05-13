@@ -6,7 +6,7 @@
     <meta charset="utf-8">
     <style>
 	body {
-		margin: 40px;
+	margin: 40px;
 		background-color: black;
 	}
 
@@ -24,9 +24,9 @@
 	.header {
 		display: flexbox;
 		grid-area: header;
-	}
+}
 
-	.footer {
+.footer {
 		display: flexbox;
 		grid-area: footer;
 	}
@@ -36,11 +36,11 @@
 		display: grid;
     grid-gap: 10px;
 		
-		grid-template-columns: repeat (200px 1fr);
+		grid-template-columns: repeat ( auto-fit, minmax(250px, 1fr) );
 		grid-template-areas:
-    "header  header  header"
+    	"header  header header"
 		"content content sidebar"
-		"footer  footer  footer";
+		"footer  footer footer";
 		background-color: #fff;
 		color: #444;
 		width: 100%;
@@ -66,7 +66,7 @@
 
  <body>
 
-	 <div class="wrapper">
+<div class="wrapper">
 	 	<div class="box header">Header</div>
 		<div class="box sidebar">Sidebar</div>
 		<div class="box content">Content
