@@ -1,0 +1,82 @@
+
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>Example 16</title>
+    <meta charset="utf-8">
+    <style>
+	body {
+		margin: 40px;
+		background-color: black;
+	}
+
+	.sidebar {
+		display: flexbox;
+		grid-area: sidebar;
+	}
+
+	.content {
+		display: flexbox;
+		grid-area: content;
+		position: relative;
+	}
+
+	.header {
+		display: flexbox;
+		grid-area: header;
+	}
+
+	.footer {
+		display: flexbox;
+		grid-area: footer;
+	}
+
+
+	.wrapper {
+		display: grid;
+    grid-gap: 10px;
+		
+		grid-template-columns: repeat (200px 1fr);
+		grid-template-areas:
+    "header  header  header"
+		"content content sidebar"
+		"footer  footer  footer";
+		background-color: #fff;
+		color: #444;
+		width: 100%;
+	}
+
+	.box {
+		background-color: #444;
+		color: #fff;
+		border-radius: 5px;
+		padding: 50px;
+		font-size: 150%;
+
+	}
+
+	.header, .footer {
+		display: flexbox;
+		background-color: #999;
+	}
+
+
+   </style>
+</head>
+
+ <body>
+
+	 <div class="wrapper">
+	 	<div class="box header">Header</div>
+		<div class="box sidebar">Sidebar</div>
+		<div class="box content">Content
+			<br /> The four arrows are inline images inside the content area.
+			<span class="topleft">A</span>
+			<span class="topright">B</span>
+			<span class="bottomleft">C</span>
+			<span class="bottomright">D</span>
+            </div>
+		<div class="box footer">Footer</div>
+	</div>
+</body>
+</html>
