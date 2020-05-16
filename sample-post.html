@@ -1,82 +1,81 @@
-
 <!DOCTYPE html>
 <html>
   <head>
-    <title>Example 16</title>
-    <meta charset="utf-8">
+    <title>Sample Post</title>
+    <meta charset="utf-8" />
+
     <style>
-	body {
-	margin: 40px;
-		background-color: black;
-	}
+      body {
+        margin: 40px;
+        background-color: #fff;
+      }
 
-	.sidebar {
-		display: flexbox;
-		grid-area: sidebar;
-	}
+      .header {
+        display: flex;
+        grid-area: header;
+      }
 
-	.content {
-		display: flexbox;
-		grid-area: content;
-		position: relative;
-	}
+      .footer {
+        display: flex;
+        grid-area: footer;
+      }
 
-	.header {
-		display: flexbox;
-		grid-area: header;
-}
+      .wrapper {
+        display: grid;
+        grid-gap: 10px;
+        grid-template-areas:
+          "header"
+          "content"
+          "footer";
 
-.footer {
-		display: flexbox;
-		grid-area: footer;
-	}
+        grid-template-columns: repeat (auto-fill, minmax(250px, 1fr));
+        background-color: #fff;
+        color: #444;
+        width: 100%;
+      }
 
+      .box {
+        background-color: #444;
+        color: #fff;
+        border-radius: 5px;
+        padding: 50px;
+        font-size: 150%;
+      }
 
-	.wrapper {
-		display: grid;
-    grid-gap: 10px;
-		
-		grid-template-columns: repeat ( auto-fit, minmax(250px, 1fr) );
-		grid-template-areas:
-    	"header  header header"
-		"content content sidebar"
-		"footer  footer footer";
-		background-color: #fff;
-		color: #444;
-		width: 100%;
-	}
+      .header,
+      .footer {
+        display: flex;
+        background-color: #999;
+      }
 
-	.box {
-		background-color: #444;
-		color: #fff;
-		border-radius: 5px;
-		padding: 50px;
-		font-size: 150%;
+      .main_content {
+        display: flex;
+      }
 
-	}
+      .sidebar_content {
+        display: flex;
+        width: 25%;
+        background-color: aqua;
+      }
 
-	.header, .footer {
-		display: flexbox;
-		background-color: #999;
-	}
+      .content {
+        display: flex;
+        flex-wrap: wrap;
+      }
+    </style>
+  </head>
 
-
-   </style>
-</head>
-
- <body>
-
-<div class="wrapper">
-	 	<div class="box header">Header</div>
-		<div class="box sidebar">Sidebar</div>
-		<div class="box content">Content
-			<br /> The four arrows are inline images inside the content area.
-			<span class="topleft">A</span>
-			<span class="topright">B</span>
-			<span class="bottomleft">C</span>
-			<span class="bottomright">D</span>
-            </div>
-		<div class="box footer">Footer</div>
-	</div>
-</body>
+  <body>
+    <div class="wrapper">
+      <div class="box header">Header</div>
+      <div class="box content">
+        <div class="main_content">
+          Content <br />
+          The four arrows are inline images inside the content area.
+        </div>
+        <div class="sidebar_content">Sidebar</div>
+      </div>
+      <div class="box footer">Footer</div>
+    </div>
+  </body>
 </html>

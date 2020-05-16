@@ -1,30 +1,30 @@
 /*Main content CSS codes starts here */
-	
-.content {
 
-    display: flex;
-   flex-wrap: wrap;
-    background-color: #56727C;
-    padding-left: 3%;
-    padding-right: 3%;
-  justify-content: space-between;
+.content {
+  display: flex;
+  flex-wrap: wrap;
+  background-color: #56727c;
+  padding-left: 3%;
+  padding-right: 3%;
+  padding-top: 2%;
+  padding-bottom: 3%;
+  justify-content: space-evenly;
 }
 
 .content > div {
-  
-  padding-top: 10%;  
+  padding-top: 10%;
+  padding-left: 3%;
+  padding-right: 3%;
   background-color: #f1f1f1;
-    width: 40%;
-    margin-top: 7px;
-    text-align: center;
-    font-size: 30px;
-    align-items: center;
-    width: 400px;
-    height: 300px;
+  width: 40%;
+  margin-top: 7px;
+  text-align: center;
+  font-size: 30px;
+  align-items: center;
+  width: 350px;
+  height: 250px;
   font-size: 20px;
-  color: #29AAE3;
- 
-
+  color: #29aae3;
 }
 
 /* Main content CSS codes end here*/
