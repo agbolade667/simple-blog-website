@@ -63,4 +63,31 @@
 }
 
 
+.animal {
+
+  text-decoration: underline;
+
+}
+
+.kingdom:hover {
+
+  text-transform: uppercase;
+
+}
+
+.phylum:hover {
+
+    background-color: yellow
+
+}
+
+
+.font-size {
+
+  font-size:10vw
+
+}
+
+
+
 /* Main content CSS codes end here*/
