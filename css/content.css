@@ -39,6 +39,7 @@
   padding-top: 2%;
   padding-bottom: 3%;
   justify-content: space-evenly;
+  height: 100%;
 }
 
 .content-post > div {
@@ -46,14 +47,20 @@
   padding-left: 3%;
   padding-right: 3%;
   background-color: #f1f1f1;
-  width: 80%;
+  width: 99%;
   margin-top: 7px;
   text-align: center;
   font-size: 30px;
   align-items: center;
-  height: 650px;
+  height: 100%;
   font-size: 20px;
   color: #29aae3;
+}
+
+.responsive {
+  max-width: 100%;
+  width: auto;
+  height: auto;
 }
 
 
