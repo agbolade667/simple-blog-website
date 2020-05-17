@@ -1,102 +1,60 @@
+<!DOCTYPE html>
 <html>
-    <head>
-        <style>
+  <head>
+    <title>Simple Blog Website</title>
+	<meta charset="utf-8" />
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" href="./css/header.css" />
+    <link rel="stylesheet" href="./css/content.css" />
+    <link rel="stylesheet" href="./css/footer.css" />
+    <link rel="stylesheet" href="./css/style.css" />
+    <base href="./sample-post.html" />
+  </head>
+
+  <body>
+    <div class="container">
+      <div class="siteHeader">
+        <!-- Items in this section are on the left -->
+
+        <div class="siteHeader__section">
+          <div class="siteHeader__item siteHeaderLogo">
+            <div class="fa fa-inbox"></div>
+          </div>
+          <div class="siteHeader__item siteHeaderButton">Home</div>
+          <div class="siteHeader__item siteHeaderButton">Contact Us</div>
+          <div class="siteHeader__item siteHeaderButton">Blog Archive</div>
+        </div>
+
+        <!-- Items in this section are on the right-->
+
+        <div class="siteHeader__section">
+          <div class="siteHeader__item siteHeaderButton">Settings</div>
+          <div class="siteHeader__item siteHeaderButton">Log out</div>
+        </div>
+      </div>
+
+      <div class="content-post">
+        <div>
+          <font size="+2"><h1>The Animal Kingdom</h1></font>
+          <br />
+
+          <p>
+            Animals (also referred to as metazoa) are multicellular eukaryotic organisms that form the biological kingdom Animalia. With few exceptions, animals consume organic material, breathe oxygen, are able to move, can reproduce sexually, and grow from a hollow sphere of cells, the blastula, during embryonic development. 
+            Read more ... 
             
-html {
-  background-color: #deded8;
-  font-family: trebuchet, geneva, sans-serif;
-}
-body {
-  margin: 0;
-}
-article, aside, footer, header {
-  padding: 0.5rem;
-  box-sizing: border-box;
-}
-header {
-  background-color: #333;
-  color: #ccc;
-  text-align: center;
-  border-bottom: 1px solid;
-}
-aside {
-  background-color: white;
-}
+            
+          </p>
+          Jan 12<br />
+          Some text<br /><br /><br />
+          <a href="#">Continue reading</a>
+        </div>
+      </div>
 
-/* default navigation values */
-nav {
-  display: flex;
-  background-color: black;
-  padding: 10px 0;
-}
-nav a {
-  flex: auto;
-  text-align: center;
-  background: #ccc;
-  color: black;
-  margin: 0 5px;
-  padding: 5px 0;
-  text-decoration: none;
-}
-nav a:hover {
-  outline: 1px solid red;
-  color: red;
-  text-decoration: underline;
-}
+      <div class="box2">
+        Blog template built by Agbolade for FEND<br />
+        Learn more about FEND
+      </div>
 
-/* larger screen */
-@media screen and (min-width: 30rem) {
-  body {
-    display: flex;
-    flex-direction: column;
-    max-width: 75rem;
-    margin: auto;
-  }
-  main {
-    display: flex;
-    flex-wrap: wrap;
-    box-sizing: border-box;
-    border-bottom: 0.5rem solid;
-  }
-  nav, header {
-    order: -1;
-  }
-  article {
-    flex: 75%;
-  }
-  aside {
-    flex: 25%;
-  }
-}
-        </style>
-    </head>
-    <body>
-  <header>
-    <h1>Document Heading</h1>
-  </header>
-  <main>
-    <article>
-      <h2>This is the heading of the main section</h2>
-      <p>This is a paragraph of text.</p>
-    </article>
-
-    <article>
-        <h2>This is the heading of the main section</h2>
-        <p>This is a paragraph of text.</p>
-      </article>
-
-
-    <aside>Here is the aside</aside>
-  </main>
-  <nav>
-    <a href="/">Home<br>Home</a>
-    <a href="/about">About</a>
-    <a href="/blog">Blog</a>
-    <a href="/jobs">Careers</a>
-    <a href="/contact">Contact Us</a>
-  </nav>
-  <footer>
-      <p>Copyright &#169; 2017 <a href="/">My Site</a></p>
-  </footer>
-</body>
+    </div>
+  </body>
 </html>

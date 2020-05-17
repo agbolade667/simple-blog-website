@@ -27,4 +27,35 @@
   color: #29aae3;
 }
 
+
+/*Main content CSS codes starts here */
+
+.content-post {
+  display: flex;
+  flex-wrap: wrap;
+  background-color: #56727c;
+  padding-left: 3%;
+  padding-right: 3%;
+  padding-top: 2%;
+  padding-bottom: 3%;
+  justify-content: space-evenly;
+}
+
+.content-post > div {
+  padding-top: 10%;
+  padding-left: 3%;
+  padding-right: 3%;
+  background-color: #f1f1f1;
+  width: 80%;
+  margin-top: 7px;
+  text-align: center;
+  font-size: 30px;
+  align-items: center;
+  height: 650px;
+  font-size: 20px;
+  color: #29aae3;
+}
+
+
+
 /* Main content CSS codes end here*/
