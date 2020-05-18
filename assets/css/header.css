@@ -9,6 +9,16 @@
   }
 }
 
+
+.container {
+
+    display: grid;
+    grid-template-areas: 
+    "header"
+    "content-post"
+    "footer";
+}
+
 .siteHeader {
   display: flex;
 
@@ -50,22 +60,24 @@
 
 /* unvisited link */
 a:link {
-  color: hotpink;
+  color: gold;
 }
 
 /* visited link */
 a:visited {
-  color: hotpink;
+  color: gold;
 }
 
 /* mouse over link */
 a:hover {
-  color: hotpink;
+  color: gold;
 }
 
 /* selected link */
 a:active {
-  color: hotpink;
+  color: gold;
 }
+
+
 
 /* Header banner CSS codes end here */
