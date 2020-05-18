@@ -48,4 +48,24 @@
   color: #d9e9ef;
 }
 
+/* unvisited link */
+a:link {
+  color: hotpink;
+}
+
+/* visited link */
+a:visited {
+  color: hotpink;
+}
+
+/* mouse over link */
+a:hover {
+  color: hotpink;
+}
+
+/* selected link */
+a:active {
+  color: hotpink;
+}
+
 /* Header banner CSS codes end here */
